@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NOLA Trip — Flight Research</title>
+<style>
+  :root{
+    --bg:#0b0d10; --card:#14181d; --border:#232a33; --text:#e8ecf1;
+    --muted:#8a94a2; --accent:#f5c265; --good:#5bd39d; --warn:#f38d7a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);padding:32px 20px;max-width:880px;margin-left:auto;margin-right:auto}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-0.01em}
+  h2{font-size:18px;margin:36px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border);letter-spacing:-0.01em}
+  h3{font-size:15px;margin:20px 0 8px;color:var(--accent);text-transform:uppercase;letter-spacing:0.05em}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:24px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin:12px 0}
+  .rec{background:linear-gradient(180deg,#1a2420,#14181d);border-color:#2f5a46}
+  .rec h3{color:var(--good)}
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:13.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:0.04em}
+  .price{font-variant-numeric:tabular-nums;font-weight:600;color:var(--accent)}
+  .total{font-size:18px;color:var(--good);font-weight:700}
+  .tag{display:inline-block;background:#1f2630;color:var(--muted);border-radius:4px;padding:2px 8px;font-size:11px;margin-right:4px}
+  .tag.best{background:#1f3b2e;color:var(--good)}
+  .tag.warn{background:#3b2a23;color:var(--warn)}
+  ul{margin:6px 0;padding-left:20px}
+  li{margin:4px 0}
+  .footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
+  .note{color:var(--muted);font-size:12.5px;margin-top:6px}
+  .pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+</style>
+</head>
+<body>
+
+<h1>NOLA Trip — Flight Research</h1>
+<p class="sub">Natalia + Mom • NYC → New Orleans → (NYC / LAX) • Thu 4/16 or Fri 4/17 out, Sun 4/19 back • <em>Last updated 2026-04-06</em></p>
+
+<div class="card rec">
+  <h3>Recommendation</h3>
+  <p style="margin-top:0"><strong>Fly together Fri 4/17 on Delta LGA → MSY 4:40 PM ($179 each).</strong> Cheapest nonstop of the week, convenient LGA departure from Brooklyn, arrives NOLA 7:01 PM — dinner on Frenchmen St that night. Sunday returns: Natalia on Delta MSY → JFK 7:55 PM ($489), Mom on Delta MSY → LAX 7:59 PM ($559) — same airport, near-identical departure, easy to taxi together.</p>
+  <p><strong>Realistic all-in budget (both people, both tickets): ~$1,406.</strong> You can shave it to ~$1,167 if Mom takes Breeze Airways (budget carrier, slightly worse reliability) instead of Delta to LAX.</p>
+</div>
+
+<h2>Bottom line — budget summary</h2>
+<div class="card">
+  <table>
+    <tr><th>Booking approach</th><th>Natalia</th><th>Mom</th><th>Total</th></tr>
+    <tr>
+      <td><strong>Recommended</strong><br><span class="note">Fri 4/17 Delta LGA out + Sun Delta returns (major carriers only)</span></td>
+      <td class="price">$668</td>
+      <td class="price">$738</td>
+      <td class="price total">$1,406</td>
+    </tr>
+    <tr>
+      <td>Budget option<br><span class="note">Same outbound, Mom on Breeze to LAX, Natalia on Southwest morning back</span></td>
+      <td class="price">$644</td>
+      <td class="price">$523</td>
+      <td class="price total">$1,167</td>
+    </tr>
+    <tr>
+      <td>Thu 4/16 out instead<br><span class="note">Thursday is $15–20/person more expensive</span></td>
+      <td class="price">$683</td>
+      <td class="price">$753</td>
+      <td class="price total">$1,436</td>
+    </tr>
+  </table>
+  <p class="note">All prices are nonstop, economy, one adult. Google Flights currently flags Sunday MSY departures as "prices currently high" — they will not drop materially.</p>
+</div>
+
+<h2>Scenario 1 — Outbound only (2× one-way NYC → MSY)</h2>
+<p class="note">Nonstop options for both dates. Friday is cheaper.</p>
+
+<div class="card">
+<h3>Fri Apr 17 (cheaper)</h3>
+<table>
+  <tr><th>Time</th><th>Airline</th><th>Route</th><th>Duration</th><th>Price</th></tr>
+  <tr><td>4:40 PM → 7:01 PM</td><td>Delta</td><td>LGA → MSY</td><td>3h 21m</td><td class="price">$179 <span class="tag best">cheapest</span></td></tr>
+  <tr><td>8:29 AM → 10:57 AM</td><td>JetBlue</td><td>JFK → MSY</td><td>3h 28m</td><td class="price">$194</td></tr>
+  <tr><td>4:29 PM → 7:00 PM</td><td>Delta</td><td>JFK → MSY</td><td>3h 31m</td><td class="price">$194</td></tr>
+  <tr><td>6:08 AM → 8:24 AM</td><td>United</td><td>EWR → MSY</td><td>3h 16m</td><td class="price">$199</td></tr>
+  <tr><td>9:29 PM → 11:54 PM</td><td>United</td><td>EWR → MSY</td><td>3h 25m</td><td class="price">$199</td></tr>
+  <tr><td>4:25 PM → 6:45 PM</td><td>Southwest</td><td>LGA → MSY</td><td>3h 20m</td><td class="price">$233</td></tr>
+</table>
+<p class="note"><strong>Best pick:</strong> Delta 4:40 PM LGA — cheapest, LGA is the easiest NYC airport from Brooklyn (30-min Uber / Q70 bus from Jackson Hts if subway route). 2× tickets = <strong class="price">$358</strong>.</p>
+</div>
+
+<div class="card">
+<h3>Thu Apr 16</h3>
+<table>
+  <tr><th>Time</th><th>Airline</th><th>Route</th><th>Duration</th><th>Price</th></tr>
+  <tr><td>8:00 AM → 10:31 AM</td><td>Delta</td><td>JFK → MSY</td><td>3h 31m</td><td class="price">$194 <span class="tag best">cheapest</span></td></tr>
+  <tr><td>8:29 AM → 10:57 AM</td><td>JetBlue</td><td>JFK → MSY</td><td>3h 28m</td><td class="price">$219</td></tr>
+  <tr><td>7:30 AM → 9:49 AM</td><td>Delta</td><td>LGA → MSY</td><td>3h 19m</td><td class="price">$229</td></tr>
+  <tr><td>4:25 PM → 6:45 PM</td><td>Southwest</td><td>LGA → MSY</td><td>3h 20m</td><td class="price">$233</td></tr>
+  <tr><td>6:08 AM → 8:24 AM</td><td>United</td><td>EWR → MSY</td><td>3h 16m</td><td class="price">$253</td></tr>
+  <tr><td>4:29 PM → 7:00 PM</td><td>Delta</td><td>JFK → MSY</td><td>3h 31m</td><td class="price">$299</td></tr>
+  <tr><td>4:40 PM → 7:01 PM</td><td>Delta</td><td>LGA → MSY</td><td>3h 21m</td><td class="price">$299</td></tr>
+  <tr><td>9:29 PM → 11:54 PM</td><td>United</td><td>EWR → MSY</td><td>3h 25m</td><td class="price">$330</td></tr>
+</table>
+<p class="note">Thursday evening departures are notably pricier ($299+). If you want Thursday, take the 8:00 AM Delta and 2× = <strong class="price">$388</strong>.</p>
+</div>
+
+<h2>Scenario 2 — Natalia's multi-city (NYC → MSY → NYC)</h2>
+<p class="note">Best outbound (Fri 4/17 Delta LGA 4:40 PM, $179) + Sunday 4/19 return. Google flags Sunday MSY → NYC as "currently high." Only 11 nonstops exist.</p>
+
+<div class="card">
+<table>
+  <tr><th>Return option (Sun 4/19)</th><th>Time</th><th>Route</th><th>Return $</th><th>All-in (w/ $179 out)</th></tr>
+  <tr><td>Southwest — morning/early afternoon arrival NYC</td><td>9:50 AM → 1:45 PM</td><td>MSY → LGA</td><td class="price">$465</td><td class="price">$644</td></tr>
+  <tr><td>Delta — evening <span class="tag best">matches Mom's LAX departure</span></td><td>7:55 PM → 11:59 PM</td><td>MSY → JFK</td><td class="price">$489</td><td class="price">$668</td></tr>
+  <tr><td>Southwest — afternoon</td><td>1:55 PM → 5:50 PM</td><td>MSY → LGA</td><td class="price">$514</td><td class="price">$693</td></tr>
+  <tr><td>Delta — late morning</td><td>10:44 AM → 2:42 PM</td><td>MSY → LGA</td><td class="price">$629</td><td class="price">$808</td></tr>
+  <tr><td>Delta — evening LGA</td><td>7:59 PM → 11:56 PM</td><td>MSY → LGA</td><td class="price">$629</td><td class="price">$808</td></tr>
+  <tr><td>American — afternoon</td><td>3:02 PM → 7:00 PM</td><td>MSY → LGA</td><td class="price">$639</td><td class="price">$818</td></tr>
+</table>
+<p class="note"><strong>Best afternoon pick:</strong> Southwest 1:55 PM for $514 ($693 all-in). <strong>Best evening pick:</strong> Delta 7:55 PM for $489 ($668 all-in) — only $24 above the morning Southwest, and it means Natalia and Mom leave MSY at almost the same time and can share a cab to the airport together.</p>
+</div>
+
+<h2>Scenario 3 — Mom's multi-city (NYC → MSY → LAX)</h2>
+<p class="note">Only 5 nonstop options exist for MSY → LAX Sunday. This is the tight constraint. Prices flagged "currently high."</p>
+
+<div class="card">
+<table>
+  <tr><th>Return option (Sun 4/19)</th><th>Time</th><th>Duration</th><th>Return $</th><th>All-in (w/ $179 out)</th></tr>
+  <tr><td>Breeze — evening <span class="tag warn">budget carrier</span></td><td>8:20 PM → 10:44 PM</td><td>4h 24m</td><td class="price">$344</td><td class="price">$523</td></tr>
+  <tr><td>Southwest — early morning</td><td>6:00 AM → 8:20 AM</td><td>4h 20m</td><td class="price">$464</td><td class="price">$643</td></tr>
+  <tr><td>Delta — morning</td><td>7:08 AM → 9:25 AM</td><td>4h 17m</td><td class="price">$474</td><td class="price">$653</td></tr>
+  <tr><td>Delta — evening <span class="tag best">recommended</span></td><td>7:59 PM → 10:17 PM</td><td>4h 18m</td><td class="price">$559</td><td class="price">$738</td></tr>
+  <tr><td>Delta — afternoon</td><td>3:00 PM → 5:15 PM</td><td>4h 15m</td><td class="price">$689</td><td class="price">$868</td></tr>
+</table>
+<p class="note">
+<strong>If budget matters more than polish:</strong> Breeze 8:20 PM at $344 saves $215 vs Delta and lines up perfectly with Natalia's 7:55 PM Delta to NYC (same airport, minutes apart).<br>
+<strong>If reliability matters more:</strong> Delta 7:59 PM at $559 — rock-solid SkyTeam carrier, Mom probably prefers the name she knows. Also leaves within minutes of Natalia's flight.
+</p>
+</div>
+
+<h2>Key insights</h2>
+<div class="card">
+<ul>
+  <li><strong>Fri 4/17 beats Thu 4/16</strong> for the outbound. Friday cheapest = $179 (Delta LGA evening). Thursday cheapest = $194 (Delta JFK morning).</li>
+  <li><strong>Sunday returns are the expensive leg of the trip.</strong> MSY → NYC nonstops start at $465; MSY → LAX nonstops start at $344. Both Sundays are flagged "currently high" — unlikely to drop.</li>
+  <li><strong>Only 5 nonstops exist MSY → LAX on Sunday.</strong> Mom's return dictates schedule flexibility, not yours.</li>
+  <li><strong>Delta is the glue airline:</strong> one carrier covers outbound (Delta LGA 4:40 PM), Natalia's return (Delta JFK 7:55 PM), and Mom's return (Delta LAX 7:59 PM). Worth booking on delta.com for easier changes and SkyMiles.</li>
+  <li><strong>Evening departures sync up Sunday:</strong> Natalia 7:55 PM + Mom 7:59 PM from MSY = one Uber to the airport, one emotional goodbye, done.</li>
+  <li><strong>LGA is the best NYC airport for Brooklyn.</strong> ~30 min by Uber from Downing St. Avoids EWR (NJ taxes, farther) and JFK (farther east).</li>
+</ul>
+</div>
+
+<h2>Open questions</h2>
+<div class="card">
+<ul>
+  <li>Is Mom flexible on airline (Breeze to save $215) or does she prefer a legacy carrier?</li>
+  <li>Does Natalia want to lock Delta across the board for SkyMiles / change flexibility, or optimize each leg independently?</li>
+  <li>Should we check one-stop options to LAX in case they're meaningfully cheaper? (Currently only looking at nonstops per your ask.)</li>
+  <li>Baggage — checked bag for Mom? Breeze and Southwest have different bag policies.</li>
+  <li>Are we booking immediately or waiting? Google says prices are "typical" for 4/17 out, "high" for Sunday returns — no meaningful upside to waiting.</li>
+</ul>
+</div>
+
+<div class="footer">
+  <p>Source: Google Flights, nonstop filter, 1 adult economy, pulled 2026-04-06. Page will be updated as decisions are made or prices shift. Prices are for one adult and exclude bags.</p>
+</div>
+
+</body>
+</html>
